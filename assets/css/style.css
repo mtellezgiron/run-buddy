@@ -164,7 +164,7 @@ section {
     color: #fce138;
     overflow: auto;
 }
-.trainer img{
+.trainer img {
     width: 35%;
     float: left;
 }
@@ -190,7 +190,7 @@ section {
     text-align: left;
 }
 .text-right{
-    text-align:right;
+    text-align: right;
 }
 /* REACH OUT STYLES START */
 .contact {
