@@ -22,6 +22,7 @@ header h1 {
     margin: 0;
     font-size: 36px;
     color: #fce138;
+    text-shadow: 0 0 10px rgba(0,0,0, 0.5);
 }
 
 header a {
@@ -43,6 +44,7 @@ header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 footer {
     background: #fce138;
@@ -88,6 +90,7 @@ section {
     font-style: italic;
     font-size: 55px;
     color: #fce138;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 .hero-form {
     border: 3px solid #024e76;
@@ -96,6 +99,7 @@ section {
     color: #024e76;
     margin: 3.5%;
     width: 40%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 .hero-form h3 {
     font-size: 24px;
@@ -387,7 +391,7 @@ grid-column: 2 /span 1;
 }
 
 @media screen and (max-width: 768px) {
-    section{
+    section {
         padding: 30px 15px;
     }
     .step h3 {
@@ -400,15 +404,30 @@ grid-column: 2 /span 1;
         text-align: center;
         justify-content: center;
     }
-.step-img {
-    flex: 0 32%;
-    margin-right: 0;
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-.step-text {
-    flex: 100%;
-}
+    .step-img {
+        flex: 0 32%;
+        margin-right: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .step-text {
+        flex: 100%;
+    }
+    .service-grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+    .service-grid-item.basic {
+        grid-column: 1;
+    }
+    .service-grid-item.both {
+        grid-column: 1 /-1;
+    }
+    .service-grid-item.cancel {
+        transform: none;
+        writing-mode: unset;
+        grid-column: 1 / -1;
+        grid-row: -1;
+    }
 }
 
 
